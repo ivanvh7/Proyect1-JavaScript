@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Tickets de Eventos</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+</head>
+<body>
+    <header>
+        <h1>Plataforma de Tickets de Eventos</h1>
+        <div class="header-buttons">
+            <button id="discount-btn">Productos con Descuento</button>
+            <button id="view-cart">Carrito de Compras</button>
+            <button id="checkout-btn">Realizar Pago</button>
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    placeholder="Buscar productos..." 
+                    id="searchInput" 
+                    aria-label="Buscar producto"
+                >
+                <button id="searchButton">🔍</button>
+            </div>
+        </div>
+    </header>
+    
+
+    <main>
+        <section id="eventSection" class="grid-container">
+            <!-- Eventos -->
+            <div class="card" data-name="Concierto RockFest" data-price="50" data-img="assets/images/Rockfest.jpg" data-discount="20">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="assets/images/pincelada.jpg" alt="Fondo pincelada">
+                        <h2>Concierto RockFest</h2>
+                        <p>El festival de rock más grande del año, con bandas legendarias.</p>
+                    </div>
+                    <div class="card-back">
+                        <img src="assets/images/Rockfest.jpg" alt="Imagen del RockFest">
+                        <button class="buy-button">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-name="Expo Arte Urbano" data-price="30" data-img="assets/images/ArteUrbano.jpg">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="assets/images/pincelada.jpg" alt="Fondo pincelada">
+                        <h2>Expo Arte Urbano</h2>
+                        <p>Exposición de los mejores artistas callejeros del mundo.</p>
+                    </div>
+                    <div class="card-back">
+                        <img src="assets/images/ArteUrbano.jpg" alt="Imagen de Arte Urbano">
+                        <button class="buy-button">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-name="Festival de Cine Indie" data-price="40" data-img="assets/images/CineIndie.jpg">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="assets/images/pincelada.jpg" alt="Fondo pincelada">
+                        <h2>Festival de Cine Indie</h2>
+                        <p>Proyecciones de películas independientes y debates.</p>
+                    </div>
+                    <div class="card-back">
+                        <img src="assets/images/CineIndie.jpg" alt="Imagen de Cine Indie">
+                        <button class="buy-button">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-name="Maratón Ciudadana" data-price="20" data-img="assets/images/maraton.jpg" data-discount="40">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="assets/images/pincelada.jpg" alt="Fondo pincelada">
+                        <h2>Maratón Ciudadana</h2>
+                        <p>Participa en la maratón más esperada de la ciudad.</p>
+                    </div>
+                    <div class="card-back">
+                        <img src="assets/images/maraton.jpg" alt="Imagen de la Maratón">
+                        <button class="buy-button">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-name="Conferencia TechWorld" data-price="60" data-img="assets/images/TechWorld.jpg">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="assets/images/pincelada.jpg" alt="Fondo pincelada">
+                        <h2>Conferencia TechWorld</h2>
+                        <p>Explora las últimas tendencias en tecnología e IA.</p>
+                    </div>
+                    <div class="card-back">
+                        <img src="assets/images/TechWorld.jpg" alt="Imagen de TechWorld">
+                        <button class="buy-button">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-name="Torneo de E-Sports" data-price="70" data-img="assets/images/Esports.jpg">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="assets/images/pincelada.jpg" alt="Fondo pincelada">
+                        <h2>Torneo de E-Sports</h2>
+                        <p>El campeonato de videojuegos más importante del año.</p>
+                    </div>
+                    <div class="card-back">
+                        <img src="assets/images/Esports.jpg" alt="Imagen de E-Sports">
+                        <button class="buy-button">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-name="Obra de Teatro Clásico" data-price="25" data-img="assets/images/TeatroClasico.jpg" data-discount="10">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="assets/images/pincelada.jpg" alt="Fondo pincelada">
+                        <h2>Obra de Teatro Clásico</h2>
+                        <p>Una interpretación moderna de una obra teatral clásica.</p>
+                    </div>
+                    <div class="card-back">
+                        <img src="assets/images/TeatroClasico.jpg" alt="Imagen de Teatro Clásico">
+                        <button class="buy-button">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-name="Feria Gastronómica" data-price="35" data-img="assets/images/FeriaGastronómica.jpg">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="assets/images/pincelada.jpg" alt="Fondo pincelada">
+                        <h2>Feria Gastronómica</h2>
+                        <p>Descubre sabores únicos de la gastronomía local.</p>
+                    </div>
+                    <div class="card-back">
+                        <img src="assets/images/FeriaGastronómica.jpg" alt="Imagen de Feria Gastronómica">
+                        <button class="buy-button">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-name="Concierto de Música Clásica" data-price="45" data-img="assets/images/MusicaClasica.jpg" data-discount="60">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="assets/images/pincelada.jpg" alt="Fondo pincelada">
+                        <h2>Concierto de Música Clásica</h2>
+                        <p>Un evento con las mejores orquestas sinfónicas del mundo.</p>
+                    </div>
+                    <div class="card-back">
+                        <img src="assets/images/MusicaClasica.jpg" alt="Imagen de Música Clásica">
+                        <button class="buy-button">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-name="Festival de Jazz Internacional" data-price="55" data-img="assets/images/Jazz.jpg">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="assets/images/pincelada.jpg" alt="Fondo pincelada">
+                        <h2>Festival de Jazz Internacional</h2>
+                        <p>Un encuentro con los mejores músicos de jazz del mundo.</p>
+                    </div>
+                    <div class="card-back">
+                        <img src="assets/images/Jazz.jpg" alt="Imagen de Festival de Jazz">
+                        <button class="buy-button">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal" id="cartModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Carrito de Compras</h2>
+                    <button id="closeModal" class="close-btn">✖</button>
+                </div>
+                <ul id="cartItems" class="cart-items">
+                    <!-- Los productos se generarán dinámicamente aquí -->
+                </ul>
+                <div class="cart-summary">
+                    <div class="total">
+                        <span>Total:</span>
+                        <span id="totalPrice">0€</span>
+                    </div>
+                </div>
+                <div class="cart-footer">
+                    <button id="emptyCartButton" class="empty-cart">Vaciar Carrito</button>
+                </div>
+            </div>
+        </div>
+    </main>
+        
+    <footer>
+        <p>© 2024 Venta de Tickets - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="assets/js/global-cart.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmar Compra</title>
+    <link rel="stylesheet" href="assets/css/checkout.css">
+</head>
+<body>
+    <header>
+        <h1>Confirmación de Compra</h1>
+    </header>
+    <main>
+        <!-- Resumen del carrito -->
+        <section id="cartSummary">
+            <h2>Tu Carrito</h2>
+            <ul id="cartItems"></ul>
+            <div class="total">
+                <strong>Total:</strong> <span id="totalPrice">0€</span>
+            </div>
+        </section>
+
+        <!-- Detalles del método de pago -->
+        <section id="paymentMethod">
+            <h2>Método de Pago</h2>
+            <div id="paymentDetails">
+                <p>No hay método de pago configurado.</p>
+                <button id="addPaymentMethod">Agregar Método de Pago</button>
+            </div>
+        </section>
+
+        <!-- Confirmar compra -->
+        <section id="confirmSection">
+            <button id="confirmPurchase" disabled>Confirmar Compra</button>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Confirmación de Compra</p>
+    </footer>
+    <script src="assets/js/checkout.js"></script>
+</body>
+</html>
